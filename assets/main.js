@@ -86,11 +86,8 @@ $(document.body).on('click', '.gif', function() {
 
 
 
-// This function is responsible for creating the clickable buttons of animal names. When the fuction is called the animalButtons
-// div is emptied and then a for loop interates through the values stored in the animals array. At each value the block creates a
-// button with the classes btn, btn-primary and button-list. A custom data attribute with the value of the arrays index value is also
-// stored on the button and the arrays index value is written to the buttons HTML. This button is then appended to the animalButtons
-// element.
+// This function is responsible for creating the clickable buttons of names. When the fuction is called the animalButtons
+/
 function createsimpsonButtons() {
     $('#simpsonButtons').empty();
 
