@@ -1,11 +1,10 @@
 var simpson = ["Bart", "Homer", "Mr. Burns", "Lisa Simpson", "Krusty", "Comic Book Guy","Troy McClure" ];
 
-// Creates animal buttons when the page loads 
+// Creates  buttons when the page loads 
 createsimpsonButtons();
 
 
-// Whenbutton with the ID of addsimpson is clicked, a new variable is saved. Trim removes excess space. Value 
-// should be  pushed to the end of the simpson array and the createsimpsonButtons
+// Whenbutton with the ID of addsimpson is clicked, a new variable is saved. Trim removes excess space. Value should be  pushed to the end of the simpson array and the createsimpsonButtons
 // function is called to redraw the buttons. This button is a submit type is submit so things get loaded only once
 $('#addsimpson').on('click', function() {
     var simpsonEntered = $('#simpsonInput').val().trim();
@@ -47,7 +46,7 @@ $(document.body).on('click', '.button-list', function() {
             var p = $('<p>').html('Rating: ' + rating);
             // Adds the text-center.
             p.addClass('text-center');
-            // Creates a new variable and assigns a img.
+            // Creates a new variable and assigns img.
             var img = $('<img>');
 
             // Adds a src to the img variable of the gifs still image.
@@ -64,7 +63,7 @@ $(document.body).on('click', '.button-list', function() {
             // Appends the p and img variables to the newGif variable.
             newGif.append(p);
             newGif.append(img);
-            // Appends the newGif variable to the element with the animals ID.
+            // Appends the newGif variable to the element with the  ID.
             $('#simpson').append(newGif);
         }
     });
@@ -86,7 +85,7 @@ $(document.body).on('click', '.gif', function() {
 
 
 
-// This function is responsible for creating the clickable buttons of names. When the fuction is called the animalButtons
+// This function is responsible for creating the clickable buttons of names. When the fuction is called 
 /
 function createsimpsonButtons() {
     $('#simpsonButtons').empty();
